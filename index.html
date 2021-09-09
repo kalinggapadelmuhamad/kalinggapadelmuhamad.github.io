@@ -17,15 +17,53 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/0b9574c8b5.js" crossorigin="anonymous"></script>
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Home | Kalingga Padel Muhamad</title>
   </head>
   <body>
    
    <!-- Main Content -->
    <div class="main">
-     <div class="container text-center">
-        <img src="assets/img/mainImage.png" class="rounded-circle mainImg">
-        <h1 class="tittle text-center mt-2">Kalingga <span class="text-teal">Padel</span> Muhamad</h1>
+     <div class="container">
+        <div class="row">
+          <div class="col text-center">
+
+            <!-- AOS -->
+            <div data-aos="fade-down" data-aos-duration="2000">
+            <!-- image rounded -->
+            <img src="assets/img/mainImage.png" class="rounded-circle mainImg">
+
+            <!-- Tittle text -->
+            <h1 class="tittle mt-4 mb-3">
+              Kalingga <span class="text-teal">Padel</span> Muhamad
+            </h1>
+
+            <!-- Description text -->
+            <span class="description" id="t"></span>
+              <!-- Developer, Teacher and IT Enthusiast<span class="text-teal">.</span> -->
+
+            <!-- ICON -->
+            <div class="icon mt-3 mb-2">
+                <a href="https://github.com/kalinggafadelmuhamad" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/kalinggafadelmuhamad" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://web.facebook.com/people/Kalingga-Fadel/100009125212251?_rdc=1&_rdr"  target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kalinggafadelmuhamad/?hl=id"  target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC6pt2R4Ltt8ZH3Nh6eOkjQg"  target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="menu">
+              <a class="nav-link" href="Achievement">achievement</a>
+              <a class="nav-link" href="Portofolio">Portofolio</a>
+              <a class="nav-link" href="Experience">Experience</a>
+              <a class="nav-link" href="About">About Me</a>
+            </div>
+
+          </div>
+        </div>
      </div>
    </div>
 
@@ -34,6 +72,24 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+    <!-- typeit JS -->
+    <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+    <script type="text/javascript">
+
+      new TypeIt("#t" ,{
+        strings: "Developer, Teacher and IT Enthusiast. ",
+        // loop: true,
+        // loopDelay: 1000,
+        // startDelay: 250
+      }).go();
+
+    </script>
+
+    <!-- aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
