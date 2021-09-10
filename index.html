@@ -20,13 +20,23 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
     <title>Home | Kalingga Padel Muhamad</title>
   </head>
   <body>
+
+  <!--   <script type="text/javascript">
+
+      $(function(){
+        $("#mainContent").load("app/view/mainConten.html");
+      });
+      
+
+    </script> -->
    
    <!-- Main Content -->
-   <div class="main">
-     <div class="container">
+   <div class="main" id="mainContent">
+      <div class="container">
         <div class="row">
           <div class="col text-center">
 
@@ -56,10 +66,16 @@
 
             <!-- Menu -->
             <div class="menu">
-              <a class="nav-link" href="Achievement">achievement</a>
-              <a class="nav-link" href="Portofolio">Portofolio</a>
-              <a class="nav-link" href="Experience">Experience</a>
-              <a class="nav-link" href="About">About Me</a>
+              <a class="nav-link" href="#Achievement" >achievement</a>
+              <a class="nav-link" href="#Portofolio"  >Portofolio</a>
+              <a class="nav-link" href="#Experience"  >Experience</a>
+              <a class="nav-link" href="#About"       >About Me</a>
+            </div>
+
+
+            <!-- footer -->
+            <div class="footer">
+              <h6 class="description mt-5 mb-3">Built with ❤️ by <span class="text-teal">Padel</span></h6>
             </div>
 
           </div>
@@ -81,7 +97,7 @@
         // loop: true,
         // loopDelay: 1000,
         // startDelay: 250
-      }).go();
+      }).go();      
 
     </script>
 
@@ -90,6 +106,8 @@
     <script>
         AOS.init();
     </script>
+    <!-- Jquery -->
+    <script src="https://simetriz.netlify.app/js/jquery.min.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
