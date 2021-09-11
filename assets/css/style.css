@@ -3,7 +3,7 @@
 }
 
 body {
-	padding: 5px;
+	padding: 10px;
 	font-family: "lato";
 }
 
@@ -27,7 +27,7 @@ body {
 .main .tittle {
 	font-size: 2.2rem;
     letter-spacing: -3px;
-    color: #000000e0;
+    color: #222;
     font-weight: 800;
     font-family: "lato";
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .main .icon a {
-	color: #000000e0;
+	color: #222;
 	font-size: 1.5rem;
 	letter-spacing: 10px;
 }
@@ -53,8 +53,18 @@ body {
 	padding: 5px;
 }
 
+.main .menuKonten hr {
+	width: 75%;
+	margin: auto !important;
+	align-content: center;
+}
+
 @media (max-width: 720px){
 	.main {
 		padding-top: 120px;
 	}
+
+	.main .menuKonten hr {
+	width: 100%;
+	
 }
