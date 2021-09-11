@@ -5,6 +5,8 @@
 body {
 	padding: 10px;
 	font-family: "lato";
+	background: #f4f4fb;
+	color: #3e4963;
 }
 
 .text-teal {
@@ -27,18 +29,18 @@ body {
 .main .tittle {
 	font-size: 2.2rem;
     letter-spacing: -3px;
-    color: #222;
+    color: #3e4963;
     font-weight: 800;
     font-family: "lato";
 }
 
 .main .description {
 	font-weight: 400;
-	color: #aaa;
+	color: #3e4963;
 }
 
 .main .icon a {
-	color: #222;
+	color: #3e4963;
 	font-size: 1.5rem;
 	letter-spacing: 10px;
 }
@@ -53,8 +55,12 @@ body {
 	padding: 5px;
 }
 
-.main .menuKonten hr {
+.main .menuKonten {
 	width: 75%;
+	margin: auto !important;
+}
+
+.main .menuKonten hr {
 	margin: auto !important;
 	align-content: center;
 }
@@ -64,7 +70,15 @@ body {
 		padding-top: 120px;
 	}
 
+	.main .menuKonten {
+		width: 100%;
+		margin: auto !important;
+
+	}
+
 	.main .menuKonten hr {
-	width: 100%;
+		margin: auto !important;
+		align-content: center;
+	}
 	
 }
