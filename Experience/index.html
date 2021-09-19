@@ -25,14 +25,16 @@
   </head>
   <body>
 
-  <!--   <script type="text/javascript">
-
-      $(function(){
-        $("#mainContent").load("app/view/mainConten.html");
-      });
-      
-
-    </script> -->
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand icon" href="../"><i class="fas fa-home"></i></a>
+        
+          <div class="navbar-nav mr-auto">
+            <a class="nav-link icon" href="#"><i class="fas fa-moon"></i></i></a>
+          </div>
+      </div>
+    </nav>
    
    <!-- Main Content -->
    <div class="main" id="mainContent">
@@ -123,6 +125,23 @@
         AOS.init();
     </script>
     <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        $(window).scroll(function(){
+
+          var scroll = $(window).scrollTop();
+          if (scroll > 20) {
+            $(".navbar").css("box-shadow" , "0 10px 30px rgba(0, 0, 0, 0.05)");
+        }else{
+          $(".navbar").css("box-shadow" , 'none');  
+        }
+        })
+      })  
+
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>

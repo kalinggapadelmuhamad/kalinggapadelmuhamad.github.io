@@ -3,7 +3,6 @@
 }
 
 body {
-	padding: 10px;
 	font-family: "lato";
 	background: #f4f4fb;
 	color: #3e4963;
@@ -19,6 +18,22 @@ body {
 	align-self: center;
 	width: 100%;
 	height: 100%;
+}
+
+.navbar {
+/*	width: 68%;
+*/	margin: auto;
+	padding: 7px;
+	background: #f4f4fb;
+}
+
+.navbar .container{
+	width: 68%;
+}
+
+.navbar a {
+	color: #3e4963 !important;
+	font-size: 1.5rem;
 }
 
 .main .mainImg {
@@ -80,5 +95,15 @@ body {
 		margin: auto !important;
 		align-content: center;
 	}
+
+	.navbar .container {
+		width: 100%;
+		margin: auto;
+	}
+
+	.navbar a {
+
+	}
+	
 	
 }
